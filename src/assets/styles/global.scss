@@ -1,0 +1,47 @@
+@import 'util/vars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  @media (max-width: 1200px) {
+    font-size: 9px;
+  }
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+
+body {
+  background-color: $white-color;
+  font-family: $primary-font;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+textarea{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
