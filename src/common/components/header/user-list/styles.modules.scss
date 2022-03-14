@@ -1,0 +1,54 @@
+@import 'src/assets/styles/global.scss';
+@import 'src/assets/styles/util/vars';
+
+.container__card{
+    width: 90%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $white-color;
+    border-bottom: 1px solid $white-color ;
+    margin: 10px 0;
+    padding: 20px 0;
+}
+
+.card__item{
+    font-size: 20px;
+    font-weight: bold;
+    color: $blue-color;
+    width: fit-content;
+}
+
+.card__p{
+    font-size: 20px;
+    color: $dark-white;
+    margin-top: 0;
+}
+
+.bg__color{
+    background: $purple-color;
+    border-radius: 11px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__info{
+display: flex;
+align-items: center;
+}
+
+.card__info__p{
+    font-size: 20px;
+    color: $light-grey;
+    margin-left: 20px;
+    border: 1px solid $light-grey;
+    border-radius: 11px;
+    padding: 10px;
+}

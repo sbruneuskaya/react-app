@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Users from './common/components/header';
+import Header from './common/components/header';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Users />
+    <Header />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -8,6 +8,9 @@ const users = [
         archive: 'Public',
         repositories:[
             'oneJs ',
+            'second-project',
+            'my-react',
+            'lesson_5'
         ]
 
     },
@@ -20,6 +23,7 @@ const users = [
         archive: 'Private',
         repositories:[
             'my_first_app',
+            'js-app'
         ]
     },
     {
@@ -31,6 +35,8 @@ const users = [
         archive: 'Public',
         repositories:[
             'First-Project',
+            'html__project',
+            'lesson_3',
         ]
     }
 ];
