@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './common/components/header';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './common/header';
+import Main from './pages/main';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Header />
+      <Main />
+      {/* < UserCard /> */}
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

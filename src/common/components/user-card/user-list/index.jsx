@@ -1,7 +1,8 @@
 import React from "react";
-import users from "./../data";
+import users from "../data";
 import './styles.modules.scss';
 import { ReactComponent as Logo } from './../../../../assets/images/logo.svg';
+
 
 const UserList = React.memo(function UserList(){
     return(
