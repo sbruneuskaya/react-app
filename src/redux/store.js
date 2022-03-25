@@ -1,8 +1,9 @@
 import { applyMiddleware, combineReducers, createStore as createReduxStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import thunk from 'redux-thunk';
+// import thunk from 'redux-thunk';
 import { repositoriesReducer } from './index';
+import { getRepositories } from './thunks';
 
 
 function storeReducer() {
@@ -16,5 +17,5 @@ const composeEnhancers = composeWithDevTools({
 })
 
 export function createStore() {
-    return createReduxStore(storeReducer(), composeEnhancers(applyMiddleware(thunk)))
+    return createReduxStore(storeReducer(), composeEnhancers(applyMiddleware(getRepositories)))
 }
